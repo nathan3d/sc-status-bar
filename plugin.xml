@@ -4,7 +4,7 @@
     <name>sc-status-bar</name>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="legacy-webview">
+            <feature name="sc-status-bar">
                 <param name="ios-package" value="SCStatusBar"/>
                 <param name="onload" value="true" />
             </feature>

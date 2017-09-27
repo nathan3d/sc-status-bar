@@ -1,0 +1,21 @@
+{
+  "name": "rdc-ui-cdv-status-bar",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "sc-status-bar",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  }
+}

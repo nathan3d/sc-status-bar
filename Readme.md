@@ -1,0 +1,1 @@
+A plugin to support transparent status bar on iOS and Android

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="sc-status-bar" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>sc-status-bar</name>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="legacy-webview">
+                <param name="ios-package" value="SCStatusBar"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/SCStatusBar.h" />
+        <source-file src="src/ios/SCStatusBar.m" />
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+        </config-file>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/uses-sdk">
+            <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="25" />
+        </edit-config>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
+            <activity android:theme="@style/AppTheme" />
+        </edit-config>
+        <resource-file src="src/android/theme.xml" target="res/values/theme.xml" />
+    </platform>
+    <config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
+        <false />
+    </config-file>
+</plugin>

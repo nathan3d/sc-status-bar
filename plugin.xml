@@ -26,4 +26,7 @@
     <config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
         <false />
     </config-file>
+    <config-file parent="UIStatusBarStyle" platform="ios" target="*-Info.plist">
+        <string>UIStatusBarStyleLightContent</string>
+    </config-file>
 </plugin>
